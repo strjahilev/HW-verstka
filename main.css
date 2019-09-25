@@ -72,8 +72,8 @@ h1{
     border-radius: 36px;
     display: block;
     width: 240px;
-    padding: 20px 0;
-    margin: 59px auto 0 auto;
+    padding: 20px 0 0 0;
+    margin: 59px auto 59px auto;
     text-decoration: none;
     text-align: center;
 
@@ -228,7 +228,7 @@ h1{
     display: flex;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .project{
         display: block;
         flex-direction: column;
@@ -239,13 +239,10 @@ h1{
 
 
 }
-@media(min-width: 768px) and (max-width: 1024px){
+@media(max-width: 768px) and (min-width: 1024px){
     .project{
         display: flex;
         flex-direction: row;
-    }
-    .feature_projects_image{
-        flex-shrink: 1;
     }
 
 }
